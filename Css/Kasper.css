@@ -527,6 +527,9 @@ header .container nav .form i {
 .video video {
   width: 100%;
 }
+.video video.vid2 {
+  display: none;
+}
 .video .text {
   position: absolute;
   background-color: var(--transparent-color);
@@ -562,20 +565,26 @@ header .container nav .form i {
   cursor: pointer;
 }
 @media (max-width : 767px) {
+  .video video {
+    display: none;
+  }
+  .video video.vid2 {
+    display: block;
+  }
   .video .text {
-    padding: 30px;
+    padding: 20px;
   }
   .video .text h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   .video .text p {
     font-size: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .video .text button {
     padding: 5px 10px;
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 /* End video */
@@ -1041,6 +1050,7 @@ header .container nav .form i {
   background-color: transparent;
   border: 1px solid #fff;
   border-right: none;
+  border-radius: 0px;
   color: #fff;
   caret-color: var(--main-color)
 }
@@ -1056,6 +1066,7 @@ header .container nav .form i {
   background-color: var(--main-color);
   border: 1px solid #fff;
   border-left: none;
+  border-radius: 0px;
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
@@ -1139,6 +1150,7 @@ header .container nav .form i {
   margin-bottom: 30px;
   caret-color: var(--main-color);
   border: none;
+  border-radius: 0px;
 }
 .contact .container .content form .main-input::placeholder {
   font-size: 12px;
@@ -1159,6 +1171,7 @@ header .container nav .form i {
 .contact .container .content form input:last-child {
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
+  border-radius: 0px;
   padding: 15px 30px;
   color: #fff;
   font-size: 12px;
@@ -1215,7 +1228,7 @@ header .container nav .form i {
     margin-bottom: 0;
   }
   .contact .container .content .info p:last-of-type {
-    margin-top: -10px;
+    margin-top: -14px;
   } 
   .contact .container .content .info h4:last-of-type {
     width: fit-content;
@@ -1228,6 +1241,7 @@ header .container nav .form i {
     margin-top: -5px;
     grid-row: 2 / span 2;
     grid-column: 2;
+    text-align: center;
   }
 }
 /* End Contact */
